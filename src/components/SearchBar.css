@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers');
+
+.ui.container {
+  padding-top: 8vh;
+}
+
+.ui.segment {
+  left: 10000px;
+  border-radius: 20px;
+  padding-bottom: 20px;
+  background-image: linear-gradient(to right bottom, rgba(136, 96, 208, 0.45), rgba(30, 115, 172, 0.25)), url(./imgs/backg2.jpg);
+  overflow: hidden;
+  -webkit-animation: slide 0.5s forwards;
+  -webkit-animation-delay: 2s;
+  animation: slide 0.5s forwards;
+  animation-delay: .1s;
+}
+
+.header__logo {
+  height: 80%;
+  position: absolute;
+  float: right;
+  max-width: 15%;
+  right: 3.5%;
+}
+
+.ui.form {
+  max-width: 85%;
+}
+
+.field {
+  font-size: 20px;
+  font-family: "Bangers";
+}
+
+.ui.form .field>label {
+  color: black;
+  font-size: 35px;
+  padding-bottom: 1vh;
+}
+
+#slide {
+  position: absolute;
+  left: -100px;
+  width: 100px;
+  height: 100px;
+  background: blue;
+  -webkit-animation: slide 0.5s forwards;
+  -webkit-animation-delay: 2s;
+  animation: slide 0.5s forwards;
+  animation-delay: 2s;
+}
+
+@-webkit-keyframes slide {
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes slide {
+  100% {
+    left: 0;
+  }
+}

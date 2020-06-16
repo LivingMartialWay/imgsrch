@@ -1,0 +1,77 @@
+.image-list {
+  margin-top: 5vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 0 15px;
+  grid-auto-rows: 11px;
+}
+
+.image-list img {
+  border-style: solid;
+  border-width: thick;
+  border-color: #EAEDE5;
+  border-radius: 10px;
+  width: 250px;
+  transition: .2s;
+  grid-row-end: span 2;
+  animation: fadeIn ease 6s;
+  -webkit-animation: fadeIn ease 6s;
+  -moz-animation: fadeIn ease 6s;
+  -o-animation: fadeIn ease 6s;
+  -ms-animation: fadeIn ease 6s;
+}
+
+.image-list :hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
